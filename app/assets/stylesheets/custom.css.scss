@@ -27,7 +27,8 @@ services{
 }
 
 new_contact{
-
+	
+	min-height:	550px;
 	margin-top:	100px;
 	display: 	block;
 	background-color:	white;
@@ -35,6 +36,7 @@ new_contact{
 	background-size: 	100% auto;
 	
 	@include make-row(20px);
+	
 }
 
 contact{
@@ -53,8 +55,8 @@ contact{
 	@include 	border-top-radius(15px);
 	@include	border-bottom-radius(15px);
 	
-	@include	make-lg-column(4);
-	@include	make-lg-column-offset(7);
+	@include	make-lg-column(5);
+	//@include	make-lg-column-offset(1);
 	
 	.phone_num{
 		text-indent:	50px;
