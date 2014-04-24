@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Acavtech</title>
+   
+   <!-- both lines of the same and both work /-->
+   <link rel="shortcut icon" href="http://ana.andres.free.fr/heroku/acavltd/favicon.ico"/>
+     <%= favicon_link_tag %>
+  
+  <% if content_for? :for_head %>
+    <%= yield :for_head %>
+  <% end %>
+  
+  <title>ACAV Tech</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
 </head>
 <body>
 
+<%= render 'layouts/header' %>
+
 <%= yield %>
+
+<%= render 'layouts/footer' %>
 
 </body>
 </html>

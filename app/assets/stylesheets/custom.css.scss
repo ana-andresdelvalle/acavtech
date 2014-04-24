@@ -1,0 +1,85 @@
+@import "bootstrap"; 
+
+home{
+
+	margin-top:	100px;
+	display: 	block;
+	background-color:	red;
+
+}
+
+why_us{
+
+	margin-top:	100px;
+	display: 	block;
+	background-color:	red;
+
+}
+
+services{
+
+	margin-top:	100px;
+	display: 	block;
+	background-color:	red;
+
+}
+
+
+header {
+		
+	.navbar{
+		height: 100px;
+		background-color: #36a;
+	
+		
+	}
+
+	.navbar-default .navbar-nav{
+	
+		li{
+			font-size: 25px;
+			background-color: #36a;
+			padding: 20px;	
+			
+			a, a:hover{
+
+				text-decoration:none;
+			}
+
+			a:hover{
+				color: #222;
+			}
+
+			a{
+				color: #DDD; 
+			}
+		}
+		
+	}
+
+	a, a:hover{
+
+		text-decoration:none;
+	}
+	
+	.logo{
+
+
+		font-family: Georgia;
+		font-size:	60px;
+		font-weight:  bold;
+		color:	white;
+	}
+	
+	.slogan{
+		margin-top: 	-15px;
+		margin-left: 	140px;
+		font-size: 		small;
+		color: 			white;
+		font-family:	Calibri; 	
+		
+	}
+	
+
+
+}
