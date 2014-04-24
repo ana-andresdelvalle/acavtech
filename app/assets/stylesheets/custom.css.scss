@@ -1,5 +1,6 @@
 @import "bootstrap"; 
 
+$brand_blue:	#36a;
 
 home{
 
@@ -32,16 +33,47 @@ new_contact{
 	background-color:	white;
 	background-image:  	image-url("presentation.png");
 	background-size: 	100% auto;
-
+	
+	@include make-row(20px);
 }
 
 contact{
-	background-color: #999;
-	width: 400px;
-	padding: 	20px;
 
+	background-color: #bbb;
+
+	width: 		400px;
+	padding: 	20px;
+	margin:		20px;
+	
+	font-family: 	Tahoma;
+	
+	border:		5px solid $brand_blue;
+	
 	display:	block;
-	/*@include border-radius("5px");*/
+	@include 	border-top-radius(15px);
+	@include	border-bottom-radius(15px);
+	
+	@include	make-lg-column(4);
+	@include	make-lg-column-offset(7);
+	
+	.phone_num{
+		text-indent:	50px;
+		font-size:	larger;
+		font-weight:	bolder;
+		
+	}
+}
+
+.new_inquiry{
+	
+	.error_msg{
+		list-style:	none;
+		font-size:	smaller;
+		font-weight:	bold;
+		font-family:	Calibri;
+		color:	red;
+	}
+
 }
 
 
@@ -49,7 +81,7 @@ header {
 		
 	.navbar{
 		height: 100px;
-		background-color: #36a;
+		background-color: $brand_blue;
 	
 		
 	}
@@ -58,7 +90,7 @@ header {
 	
 		li{
 			font-size: 25px;
-			background-color: #36a;
+			background-color: $brand_blue;
 			padding: 20px;	
 			
 			a, a:hover{

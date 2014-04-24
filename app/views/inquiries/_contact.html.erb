@@ -1,9 +1,11 @@
 <!-- app/views/inquiries/_contact.html.erb -->
 <contact class="contact">
-			<p>We are based in London</p>
-			<p>You can call us at:<BR>+44 (0) 208 1331 142</p>
+			<h1>We are based in London</h1>
 			<p> </p>
-			<p>You can also send us your inquiry. We will contact you back in less than 24h.</p>
+			<p>You can call us at:<p>
+			<p class="phone_num">+44 (0) 208 1331 142</p>
+			<p> </p>
+			<p>You can also use this form.<BR>We will contact you back in less than 24h.</p>
 			
 			<%= render 'inquiries/form', :inquiry => @inquiry %>
 </contact>
