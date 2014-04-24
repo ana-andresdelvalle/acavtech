@@ -80,6 +80,47 @@ header {
 		
 	}
 	
+}  /*header*/
 
 
-}
+
+footer{
+
+	color: #CCC;
+	background:	#444;
+	padding-top: 	10px;
+	padding-bottom:	10px;
+
+	a {
+		color: #CCC;
+	}
+
+	a:hover {
+		color: #222;
+	}
+
+	small {
+	  float: right;
+	  
+	}
+
+	#share-buttons
+	{
+
+		float: left;
+		
+
+		img {
+			width: 50px;
+			padding-left: .5%;
+			padding-right: .5%;
+			border: 0;
+			box-shadow: 0;
+			display: inline;
+		}
+	}
+
+} /*footer*/
+
+
+
