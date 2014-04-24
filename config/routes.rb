@@ -1,9 +1,18 @@
 Acavtech::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/why_us"
-  get "static_pages/services"
-  
   root "static_pages#home"
+  
+  get "static_pages/home" 
+  
+  match '/why_us',    to: 'static_pages#why_us',    via: 'get'
+  match '/services',   to: 'static_pages#services',   via: 'get'
+
+   
+  match '/contact',  to: 'inquiries#new',  via: 'get'
+  
+	resources :inquiries, :only => [:new, :create] do
+		get 'thank_you', :on => :collection
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

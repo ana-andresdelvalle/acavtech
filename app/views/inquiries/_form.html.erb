@@ -1,0 +1,67 @@
+<!-- app/views/inquiries/_form.html.erb -->
+ 
+<%= form_for inquiry do |f| %>
+  <% if inquiry.errors.any? %>
+    <ul>
+      <% inquiry.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  
+  <table>
+	<tr>
+	<td>
+    <%= f.label :name %>
+	</td>
+	<td>
+    <%= f.text_field :name %>
+	</tr>
+  
+	<tr>
+	<td>
+	<div style="display: none;">
+    <%= f.label :surname %>
+    <%= f.text_field :surname %>
+	</div>
+	<td>
+	</td>
+   
+  <tr>
+  <td>
+    <%= f.label :email %>
+	</td>
+    <td>
+	<%= f.text_field :email %>
+	</td>
+  </tr>
+  
+  <tr>
+  <td>  
+    <%= f.label :message %>
+	</td>
+	<td><br/>
+    <%= f.text_area :message %>
+	
+	</td>
+  </tr>
+  <tr>
+  <td>
+	
+  </td>
+  <td>
+  <div id="minimessage">
+	The message is limited to 1000 characters
+  </div>
+
+  <div class="submission">
+    <%= f.submit "Send" %>
+  </div>
+  
+  </td>
+  </tr>
+  
+  </table>
+  
+  
+<% end %>

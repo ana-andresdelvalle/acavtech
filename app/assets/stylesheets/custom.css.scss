@@ -1,5 +1,6 @@
 @import "bootstrap"; 
 
+
 home{
 
 	margin-top:	100px;
@@ -22,6 +23,25 @@ services{
 	display: 	block;
 	background-color:	red;
 
+}
+
+new_contact{
+
+	margin-top:	100px;
+	display: 	block;
+	background-color:	white;
+	background-image:  	image-url("presentation.png");
+	background-size: 	100% auto;
+
+}
+
+contact{
+	background-color: #999;
+	width: 400px;
+	padding: 	20px;
+
+	display:	block;
+	/*@include border-radius("5px");*/
 }
 
 
